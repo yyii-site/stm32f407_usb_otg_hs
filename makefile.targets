@@ -1,0 +1,6 @@
+clean2:
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(C_UPPER_DEPS)$(CXX_DEPS)$(SECONDARY_FLASH)$(SECONDARY_SIZE)$(ASM_DEPS)$(S_UPPER_DEPS)$(C_DEPS)$(CPP_DEPS)
+	-$(RM) $(OBJS) *.elf
+	-@echo ' '
+    
+*.elf: $(wildcard C:/Publish/Studio_Pub/RTThreadStudio/workspace/stm32f407_usb_otg_hs/linkscripts/STM32F407VE/link.lds)
